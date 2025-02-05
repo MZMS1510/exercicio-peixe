@@ -24,6 +24,8 @@ function preload() {
 
   // Carrega a imagem que eu escolhi
   this.load.image("peixe2", "assets/peixes/baiacu_lado.png");
+
+  this.load.image("concha", "assets/shell.png");
 }
 
 function create() {
@@ -33,6 +35,10 @@ function create() {
   this.add.image(400, 525, "logo").setScale(0.5);
 
   this.add.image(400, 400, "peixe2").setScale(0.5);
+
+  this.add.image(200, 300, "concha").setScale(0.5);
+  this.add.image(550, 110, "concha").setScale(0.5);
+  this.add.image(570, 430, "concha").setScale(0.5);
 
   // Guarda o peixinho em uma váriavel
   peixinho = this.add.image(400, 300, "peixe");
